@@ -10,7 +10,7 @@ import "./tailwind.css";
 import './antd.min.css';
 import React from "react";
 import { StyleProvider } from '@ant-design/cssinjs'
-import {Button} from "antd";
+import {DefaultLayout} from "~/layout/DefaultLayout";
 
 export const links: LinksFunction = () => {
     const links: LinkDescriptor[] = [
@@ -43,25 +43,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <body>
             <StyleProvider hashPriority="high">
                 {children}
-                <ScrollRestoration />
-                <Scripts />
             </StyleProvider>
+            <ScrollRestoration />
+            <Scripts />
         </body>
         </html>
     );
-}
-
-interface DefaultLayoutProps {
-    children: React.ReactNode
-}
-
-export function DefaultLayout({ children }: DefaultLayoutProps) {
-    return (
-        <>
-            <Button type={'primary'}>Hello</Button>
-            { children }
-        </>
-    )
 }
 
 export default function App() {
