@@ -3,8 +3,8 @@ import Container from "~/components/Container";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: "OptimaPic - Home" },
+    { name: "description", content: "OptimaPic - Compress, convert, resize and flip your image" },
   ];
 };
 

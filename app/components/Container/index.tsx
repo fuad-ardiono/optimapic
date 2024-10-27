@@ -8,7 +8,7 @@ interface ContainerProps {
 export default function Container({ children, ...props }: ContainerProps) {
   return (
     <>
-      <div className={`flex flex-col h-screen ${props.className ? props.className : ''}`}>
+      <div className={`flex flex-col ${props.className ? props.className : ''}`}>
         { children }
       </div>
     </>
