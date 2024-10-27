@@ -1,0 +1,57 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+# Default settings for all files
+[*]
+# Unix-style newlines with a newline ending every file
+end_of_line = lf
+insert_final_newline = true
+# Set default charset
+charset = utf-8
+# 2 space indentation
+indent_style = space
+indent_size = 2
+# Remove any whitespace characters preceding newline characters
+trim_trailing_whitespace = true
+
+# Markdown files
+[*.md]
+# Don't trim trailing whitespace in Markdown (they are used for line breaks)
+trim_trailing_whitespace = false
+max_line_length = 80
+
+# TypeScript and JavaScript files
+[*.{ts,tsx,js,jsx}]
+quote_type = single
+max_line_length = 80
+
+# JSON files
+[*.json]
+indent_size = 2
+
+# YAML files
+[*.{yml,yaml}]
+indent_size = 2
+
+# CSS, SCSS, and less files
+[*.{css,scss,less}]
+indent_size = 2
+
+# HTML files
+[*.{html,htm}]
+indent_size = 2
+
+# Package files
+[package.json]
+indent_size = 2
+
+# Config files
+[*.{config,conf}]
+indent_size = 2
+
+# Environment files
+[*.env*]
+indent_size = 2
+
